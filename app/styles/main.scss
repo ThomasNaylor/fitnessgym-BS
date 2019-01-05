@@ -1,0 +1,269 @@
+/* start sass defaults */
+$primary-color: #919294;
+$secondary-color:#fa7c30;
+
+$primary-text: #000000;
+$secondary-text: #2f2b2b;
+$tertiary-text: #fa7c30;
+$default-text: #ffffff;
+
+$primary-background: #f1f4f6;
+$secondary-background: #efeef4;
+$tertiary-background: #161418;
+$default-background: #ffffff;
+/* end sass defaults */
+
+/* start font rules */
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* end font rules */
+
+/* start default styles */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 3.0rem; }
+h3 { font-size: 2.5rem; }
+h4 { font-size: 2.0rem; }
+h5 { font-size: 1.5rem; }
+
+p {
+  padding: 10px 0px;
+}
+
+.text-orange {
+  color: $tertiary-text;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.section {
+  padding: 70px 0px;
+}
+
+a.btn {
+  margin: 10px 0px;
+}
+
+ul {
+  li {
+    a {
+      color: $default-text;
+      transition: 0.2s;
+      &:hover {
+        text-decoration: none;
+        color: $tertiary-text !important;
+      }
+    }
+  }
+}
+
+i.fa {
+  font-size: 3em;
+}
+
+.btn {
+  background-color: $secondary-color;
+  color: $default-text;
+  border: none;
+  border-radius: 0px;
+  transition: .8s;
+  &:hover {
+    background-color: $primary-color;
+    color: $default-text !important;
+  }
+}
+/* end default styles */
+
+/* start modal styles */
+.modal {
+  .modal-dialog {
+    .modal-content {
+      background-color: $primary-background;
+    }
+  }
+}
+/* end modal styles */
+
+/* start header styles */
+header {
+  .logo {
+    margin: 0px 20px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    span {
+      color: $tertiary-text;
+    }
+  }
+
+  .navbar {
+    height: 74px;
+    background-color: rgba(1,1,1,0.5) !important;
+    transition: 0.6s ease;
+  }
+
+  .navbar-transition {
+    height: 50px;
+    background-color: $tertiary-background !important;
+    transition: 0.6s ease;
+  }
+
+  .navbar-toggler {
+    color: white !important;
+    background-color: $tertiary-text;
+  }
+
+  .nav-link {
+    color: $default-text !important;
+    margin: 0px 8px;
+    letter-spacing: 1px;
+  }
+}
+/* end header styles */
+
+/* start hero section */
+.fitness-bg-hero {
+  background-image: url('../images/bg/bg-1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+/* end header section */
+
+/* start welcome section */
+.welcome-section {
+  background-color: $secondary-background;
+  .welcome-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* end welcome section */
+
+/* start class section */
+.class-section {
+  .card-body {
+    background-color: $secondary-background;
+  }
+}
+/* end classes section */
+
+/* start motiv section */
+.motiv-bg {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../images/bg/bg-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* end motiv section */
+
+/* start trainer section */
+.trainer-section {
+  .card-body {
+    background-color: $default-background;
+    text-align: center;
+  }
+}
+/* end trainer section */
+
+/* start trial section */
+.trial-bg {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('../images/bg/bg-trial2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* end trial section */
+
+/* start footer section */
+footer {
+  background-color: $tertiary-background;
+
+  .footer-section {
+    padding: 0px 20px;
+  }
+
+  .social-media {
+    list-style: none;
+
+    li {
+      margin-right: 10px;
+    }
+  }
+
+  .sitemap {
+    list-style: none;
+  }
+}
+/* end footer section */
+
+/* start mobile styles 768px */
+@media(max-width: 1024px) {
+  .section {
+    height: auto !important;
+  }
+
+  .hero-section {
+    height: 100% !important;
+  }
+  .card {
+    margin: 10px auto;
+  }
+
+  footer {
+    .footer-section {
+      margin: 20px 0px;
+
+      .social-media {
+        margin: 30px 0px;
+      }
+    }
+  }
+}
+/* end mobile styles 768px */
+
+/* start mobile styles >576px */
+@media(max-width: 576px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  p {
+    padding: 0px 0px;
+  }
+
+  .section {
+    padding: 30px 0px;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
+}
+/* end mobile styles */

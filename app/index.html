@@ -1,0 +1,498 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fitness Studio | Cape Town</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- build:css(.) styles/vendor.css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- bower:css -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body id="home">
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- start modal login -->
+    <div class="modal fade" id="modalSignup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signup">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    I agree to the <a href="#">Term & Conditions</a>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal login-->
+
+    <!-- start modal signup -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="login">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row align-items-center">
+                <div class="col-sm-12 my-1">
+                  <label class="sr-only" for="username">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                  </div>
+                </div>
+                <div class="col-sm-12 my-1">
+                  <label class="sr-only" for="password">Password</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">P</div>
+                    </div>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="col-12 my-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                    <label class="form-check-label" for="autoSizingCheck2">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal signup-->
+
+    <!-- start modal contact -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactTitle">Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Name:</label>
+                <input type="email" class="form-control" id="name" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal contact-->
+
+    <!-- start navbar -->
+    <header>
+      <nav id="j-navbar" class="navbar navbar-dark fixed-top navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#"><span class="logo">FITNE<span>SS</span></span></a>
+
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <button class="btn m-2" type="submit" data-toggle="modal" data-target="#modalLogin">Login</button>
+          <button class="btn m-2" type="submit" data-toggle="modal" data-target="#modalSignup">Sign up</button>
+
+        </div>
+      </nav>
+    </header>
+    <!-- end navbar -->
+
+    <!-- start hero content -->
+    <div id="j-hero-section" class="section hero-section fitness-bg-hero h-100">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-light">
+              <h1>MAKE YOUR BODY <br><span class="text-orange">BEAUTIFUL</span></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+              <button type="button" class="btn" data-toggle="modal" data-target="#modalContact">GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end hero content -->
+
+    <!-- start welcome content -->
+    <div class="section welcome-section h-100">
+      <div class="container h-100 d-flex">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h3>WELCOME TO <span class="text-orange">FITNESS</span></h3>
+            <p class="bold-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+
+              <p>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+              <button type="button" class="btn" data-toggle="modal" data-target="#modalContact">GET IN TOUCH</button>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="welcome-img d-flex justify-content-center">
+              <img src="images/welcome/fitness.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end welcome content -->
+
+    <!-- start class content -->
+    <div class="section class-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>WELCOME TO <span class="text-orange">FITNESS</span></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+            <div class="card" style="width: 19rem;">
+              <img src="images/class/cf.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Basic Crossfit</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+            <div class="card" style="width: 19rem;">
+              <img src="images/class/studio.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fitness Studio</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+            <div class="card" style="width: 19rem;">
+              <img src="images/class/yoga.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yoga Classes</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end class content -->
+
+    <!-- start motivation content -->
+    <div class="section motiv-section motiv-bg d-flex h-75">
+      <div class="container d-flex">
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="text-light">
+              <h3>WE TRAINED WITH</h3>
+              <h1>STEVE COOK</h1>
+              <button type="button" class="btn" data-toggle="modal" data-target="#modalContact">GET IN TOUCH</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start motivation content -->
+
+    <!-- start trainer content -->
+    <div class="section trainer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h4>EXPERT <span class="text-orange">TRAINERS</span></h4>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+            <div class="card" style="width: 19rem;">
+              <img src="images/trainers/trainer1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sarra Millar</h5>
+                <p>SPINNING TRAINER</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+            <div class="card" style="width: 19rem;">
+              <img src="images/trainers/trainer2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p>BOOTCAMP TRAINER</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+            <div class="card" style="width: 19rem;">
+              <img src="images/trainers/trainer3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jack Percel</h5>
+                <p>WEIGHT TRAINER</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end trainer content -->
+
+    <!-- start trial section -->
+    <div class="section trial-section trial-bg d-flex h-75">
+      <div class="container d-flex flex-column align-self-center">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="text-light text-center">
+              <h4>TRY NOW</h4>
+              <h2>FREE 5 DAY PASS</h2>
+              <a class="btn" data-toggle="modal" data-target="#modalContact">GET IN TOUCH</a>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="text-light text-center">
+              <h4>CALL US AND TRY</h4>
+              <h2>123-4567-890</h2>
+              <a class="btn" data-toggle="modal" data-target="#modalContact">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end trial section -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+              <div class="footer-section text-light">
+                <h5>FITNESS</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+
+                <ul class="social-media d-flex">
+                  <li>FOLLOW US:</li>
+                  <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter-square"></i></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube-square"></i></i></a></li>
+                </ul>
+
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+              <div class="footer-section text-light">
+                <h5>INSTAGRAM</h5>
+                <!-- InstaWidget -->
+                <a href="https://instawidget.net/v/tag/gym" id="link-1339db6e20a1a2a13b93bb97d6da0c7ee3a1164828c54290a631a33cf99f3386">#gym</a>
+                <script src="https://instawidget.net/js/instawidget.js?u=1339db6e20a1a2a13b93bb97d6da0c7ee3a1164828c54290a631a33cf99f3386&width=300px"></script>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-auto col-lg-4 col-xl-4">
+              <div class="footer-section text-light">
+                <h5>SITEMAP</h5>
+                <ul class="sitemap">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Book</a></li>
+                  <li><a href="#">Trainers</a></li>
+                  <li><a href="#">The Studio</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <p>Coded by: Thomas Naylor | Base off: FreeFitness | free-PSD-Templates.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
